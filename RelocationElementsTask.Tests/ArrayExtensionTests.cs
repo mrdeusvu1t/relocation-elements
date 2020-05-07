@@ -20,14 +20,14 @@ namespace RelocationElementsTask.Tests
         }
 
         [Test]
-        public void MoveToTail_Array_Is_Null_Throw_ArgumentNullException()
+        public void MoveToTail_ArrayIsNull_ThrowArgumentNullException()
         {
             Assert.Throws<ArgumentNullException>(() => ArrayExtension.MoveToTail(null, 1),
                 "Array cannot be null.");
         }
 
         [Test]
-        public void MoveToTail_Array_Is_Empty_Throw_ArgumentException()
+        public void MoveToTail_ArrayIsEmpty_ThrowArgumentException()
         {
             Assert.Throws<ArgumentException>(() => ArrayExtension.MoveToTail(new int[] { }, 1),
                 "Array cannot be empty.");
