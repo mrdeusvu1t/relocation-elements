@@ -12,8 +12,8 @@ namespace RelocationElementsTask
         /// </summary>
         /// <param name="source"> Source array. </param>
         /// <param name="value">Source value.</param>
-        /// <exception cref="ArgumentNullException">Thrown when array is null.</exception>
-        /// <exception cref="ArgumentException">Thrown when array is empty.</exception>
+        /// <exception cref="ArgumentNullException">Thrown when source array is null.</exception>
+        /// <exception cref="ArgumentException">Thrown when source array is empty.</exception>
         public static void MoveToTail(int[] source, int value)
         {
             throw  new NotImplementedException("You need to implement this function.");
