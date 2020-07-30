@@ -16,7 +16,7 @@ namespace RelocationElementsTask
         /// <exception cref="ArgumentException">Thrown when source array is empty.</exception>
         public static void MoveToTail(int[] source, int value)
         {
-            throw  new NotImplementedException("You need to implement this function.");
+            throw new NotImplementedException("You need to implement this function.");
         }
     }
 }
