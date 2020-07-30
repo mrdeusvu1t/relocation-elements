@@ -1,6 +1,8 @@
 using System;
 using NUnit.Framework;
 
+#pragma warning disable CA1707
+
 namespace RelocationElementsTask.Tests
 {
     public class ArrayExtensionTests
@@ -22,15 +24,13 @@ namespace RelocationElementsTask.Tests
         [Test]
         public void MoveToTail_ArrayIsNull_ThrowArgumentNullException()
         {
-            Assert.Throws<ArgumentNullException>(() => ArrayExtension.MoveToTail(null, 1),
-                "Array cannot be null.");
+            Assert.Throws<ArgumentNullException>(() => ArrayExtension.MoveToTail(null, 1), "Array cannot be null.");
         }
 
         [Test]
         public void MoveToTail_ArrayIsEmpty_ThrowArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => ArrayExtension.MoveToTail(new int[] { }, 1),
-                "Array cannot be empty.");
+            Assert.Throws<ArgumentException>(() => ArrayExtension.MoveToTail(Array.Empty<int>, 1), "Array cannot be empty.");
         }
     }
 }
